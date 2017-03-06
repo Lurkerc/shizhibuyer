@@ -21,6 +21,7 @@ module.exports = {
     //   src:"assets/less/main.less",
     //   lang:"less-loader"
     // }
+    "~assets/css/pageFadeIn.css"
   ],
   /*
   ** Customize the progress-bar color
