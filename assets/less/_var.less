@@ -1,0 +1,115 @@
+@charset "UTF-8";
+/* 公共变量 */
+@publicBodyWidth:1200px;                    /* 内容中心宽度 */
+@publicWidth25:25%;                         /* 四分之一宽度 */
+@publicWidthHalf:50%;                       /* 父级一半的宽度 */
+@publicBodyStyleColor:#37b3ed;              /* 页面整体颜色 */
+@publicBorderColor:#dedede;                 /* 边框颜色  浅色*/
+@publicFontColorForStrong:#191919;          /* 重要字体颜色 深灰色*/
+@publicFontColor:#515151;                   /* 一般字体颜色  灰黑色*/
+@publicFontColorDark:#909090;               /* 副标题暗灰色 */
+@publicFontColorOrange:#ffc700;             /* 橙色 */
+@publicOrangeRedColor:#f0796a;              /* 橘红色 */
+@publicTheLineWidth:56px;                   /* 横线宽度 */
+// 顶部
+@headerTopBarBackgroundColor:#f6f6f6;       /* 顶部背景颜色 */
+@headerTopBarHeight:28px;                   /* 顶部提示栏高度 */
+@headerTopLoginWidth:110px;                 /* 登录注册宽度 */
+@headerMainHeight:78px;                     /* 顶部高度 */
+@headerLogoHeight:40px;                     /* 顶部logo高度 */
+@headerMainMarginLeftForLogo:0 0 0 10px;    /* 顶部菜单相对logo的左边距 */
+@headerMainNavAPadding:0 10px;              /* 顶部菜单内边距 */
+@headerMainNavAMargin:0 10px;               /* 顶部菜单外边距 */
+@headerSearchWidth:332px;                   /* 顶部搜索框宽度 */
+@headerSearchHeight:38px;                   /* 顶部搜索框高度 */
+@headerHoverStateColor:#f8f8f8;             /* 顶部鼠标Hover的颜色 */
+// 底部
+@footerBackgroundColor:#3a3a3a;             /* 底部背景颜色 */
+// 评论
+@commentWidth:1000px;                       /* 评论宽度 */
+@commentHeight:234px;                       /* 评论高度 */
+@commentMarUserPhoto:10px;                  /* 右边内容部分与头像之间的边距 */
+
+// 头像尺寸
+@theCommentUserPhotoWH:62px;                /* 公共评论列表中用户头像 */
+// 达人作品
+@masterConRightPhotoInfoWidth:330px;        /* 达人作品页的用户资料宽度 */
+
+/* 登录 */
+@loginMaskContentWidth:410px;               /* 弹框登录的内容中心宽度 */
+@loginMakContentHeight:400px;               /* 登录高度 */
+@regAndForgotMakContentHeight:310px;        /* 注册高度 */
+
+/* 公共样式 */
+.floatLeft{float:left;}
+.floatRight{float:right;}
+.clearFloat{clear:both;height:0;width:0;}
+.theOrangeRed{color:@publicOrangeRedColor;}
+.theOrange{color:@publicFontColorOrange;}
+.iconBackgroundImg{background:url(../img/icon/icon.png) no-repeat;}
+.contentCenter{width:@publicBodyWidth;min-width:@publicBodyWidth;margin:0 auto;}
+.theMinWidth100{width:100%;min-width:@publicBodyWidth;}
+.textOverflowEllipsis(@lineNums:1){height:@lineNums * 22px;text-overflow: ellipsis;overflow:hidden;display: -webkit-box;-webkit-line-clamp: @lineNums;-webkit-box-orient: vertical;}
+.imgVerticalAndHorizontalCenter{display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    overflow: hidden;
+}
+.lookMore{font-size:16px;color:@publicBodyStyleColor;}
+.theMainPublicSty,.theMenu{margin-top:106px;}
+.header.active~.main{margin-top:@headerMainHeight;}
+.header.active~.theMenu{margin-top:@headerMainHeight;}
+.header.active~.theMenu~.main{margin-top:0;}
+
+.topBox{
+    text-align: center;
+    .theTitle{letter-spacing:1px;font-size:30px;margin-bottom:0;}
+    .theLine{width:@publicTheLineWidth;height:2px;background-color:@publicBodyStyleColor;display:inline-block;}
+    .theText{margin-top:10px;font-size:16px;}
+}
+
+.border-radius(@radius:5px){
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    -ms-border-radius: @radius;
+    -o-border-radius: @radius;
+    border-radius: @radius;
+}
+
+.box-sizing(@box-sizing-content:border-box){
+    -moz-box-sizing: @box-sizing-content;
+    -webkit-box-sizing: @box-sizing-content;
+    -o-box-sizing: @box-sizing-content;
+    -ms-box-sizing: @box-sizing-content;
+    box-sizing: @box-sizing-content;
+}
+
+
+/*顺时针旋转180度*/
+.rotate(@theRote:180deg){
+    filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+    -moz-transform: rotate(@theRote);
+    -o-transform: rotate(@theRote);
+    -webkit-transform: rotate(@theRote);
+    transform: rotate(@theRote);
+}
+
+/*黑白滤镜 默认100 范围1-100*/
+.grayscale(@grayscale:100%){
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter:grayscale(100%);
+    filter:gray;
+    filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+}
