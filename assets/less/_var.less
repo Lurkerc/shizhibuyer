@@ -113,3 +113,8 @@
     filter:gray;
     filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
 }
+
+// 文字超出省略（默认1行）
+.textOverflowEllipsis(@lineNums:1){
+    text-overflow: ellipsis;overflow:hidden;display:-webkit-box;-webkit-line-clamp:@lineNums;-webkit-box-orient:vertical;
+}
