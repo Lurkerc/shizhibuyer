@@ -16,7 +16,10 @@ module.exports = {
   /*
   ** Global CSS
   */
-  css: ['~assets/css/pageFadeIn.css'],
+  css: [
+    '~assets/css/pageFadeIn.css',
+    '~assets/css/resetStyle.css'
+  ],
   /*
   ** Customize the progress-bar color
   */
