@@ -1,13 +1,9 @@
 <template>
-  <my-nav/>
+  <div class="content">这是内容</div>
 </template>
 
 <script>
-  import Mynav from '~components/seller-nav.vue'
-
-  export default{
-    components: {
-      Mynav
-    }
+  export default {
+    layout: 'console'
   }
 </script>
