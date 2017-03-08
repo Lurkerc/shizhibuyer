@@ -6,7 +6,7 @@
                 <li class="item">
                     <div class="itemBox">
                         <p class="itemTitle">手机号</p>
-                        <input class="itemInputText" type="text" v-model.trim="phone" placeholder="请输入手机号" maxlength="16">
+                        <input class="itemInputText" type="text" v-model.trim="phone" placeholder="请输入手机号" maxlength="11">
                     </div>
                     <div class="itemBox">
                         <p class="itemTitle">验证码</p>
@@ -31,7 +31,7 @@
                 <li class="item">
                     <div class="itemBox">
                         <p class="itemTitle">结算银行卡号</p>
-                        <input class="itemInputText long strong" type="text" v-model="card" placeholder="请输入与结算的银行卡卡号" maxlength="19">
+                        <input class="itemInputText long" type="text" v-model="card" placeholder="请输入与结算的银行卡卡号" maxlength="19">
                     </div>
                     <div class="itemBox">
                         <p class="itemTitle">开户银行</p>
@@ -63,7 +63,7 @@
                     <input type="checkbox" class="checkbox" id="agreementInput"/>
                     <label for="agreementInput" class="agreementInput">阅读并接受<a href="">《拾指商家入驻协议》</a></label>
                 </div>
-                <nuxt-link to="/seller/Authentication-result/" class="submitBtn">提交审核</nuxt-link>
+                <nuxt-link to="/seller/Authentication/123456" class="submitBtn">提交审核</nuxt-link>
             </div>
         </div>
     </section>
@@ -84,10 +84,9 @@
       }
       .itemTitle{font-size:16px;margin-bottom:16px;height:24px;}
       .itemInputText{width:285px - @itemBoxMarginRight * 2;height:16px;padding:15px;border:1px solid @publicBorderColor;
-          &:focus{border:1px solid @publicBodyStyleColor;}
+          &:focus{border-color:@publicBodyStyleColor;}
           &.long{width:420px - @itemBoxMarginRight * 2;}
           &.small{width:194px - @itemBoxMarginRight * 2;}
-          &.strong{font-weight:bolder;}
       }
       .getCoderBtn{width:130px;height:48px;display:block;color:#fff;position:absolute;right:0;bottom:0;line-height:48px;text-align:center;background-color:@publicBodyStyleColor;
           &:hover{background-color:@publicBodyStyleColor + 10;}
@@ -118,11 +117,6 @@
           accountAddr: '',
           tips: '提示文本'
         }
-      },
-      computed: {
-      },
-      methods: {
-
       },
       // page head config
       head () {

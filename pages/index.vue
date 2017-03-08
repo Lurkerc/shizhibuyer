@@ -1,7 +1,7 @@
 <template>
   <section class="main">
     <div class="btnBox">
-      <nuxt-link class="button" to="/seller/Authentication/">前往认证页面</nuxt-link>
+      <nuxt-link class="button" to="/seller/authentication/">前往认证页面</nuxt-link>
     </div>
   </section>
 </template>
