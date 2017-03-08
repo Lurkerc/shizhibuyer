@@ -46,7 +46,6 @@
 
 <style lang="less">
 @import '~assets/less/_var.less';
-@import '~assets/less/resetStyle.less';
 /* 底部公共样式 */
 .footer{width:100%;min-width:@publicBodyWidth;height:auto;background-color:@footerBackgroundColor;}
 .footerMain{width:@publicBodyWidth;min-width:@publicBodyWidth;margin:0 auto;

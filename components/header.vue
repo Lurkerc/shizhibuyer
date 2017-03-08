@@ -38,7 +38,6 @@
 
 <style lang="less">
 @import '~assets/less/_var.less';
-@import '~assets/less/resetStyle.less';
 /* 顶部公共样式 */
 .header{width:100%;min-width:@publicBodyWidth;position:fixed;top:0;z-index:99;background-color:#fff;}
 .headerTop{width:100%;height:@headerTopBarHeight;background-color:@headerTopBarBackgroundColor;overflow:hidden;}
