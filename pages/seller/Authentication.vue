@@ -6,11 +6,12 @@
                 <li class="item">
                     <div class="itemBox">
                         <p class="itemTitle">手机号</p>
-                        <input class="itemInputText" type="text" v-model="phone" placeholder="请输入手机号" maxlength="11">
+                        <input class="itemInputText" type="text" v-model.trim="phone" placeholder="请输入手机号" maxlength="11">
                     </div>
                     <div class="itemBox">
                         <p class="itemTitle">验证码</p>
-                        <input class="itemInputText" type="text" v-model="code" placeholder="六位数" maxlength="6">
+                        <input class="itemInputText" type="number" v-model.number="code" placeholder="六位数" maxlength="6">
+                        <a href="javascript:;" class="getCoderBtn">获取验证码</a>
                     </div>
                     <div class="itemBox noMargin">
                         <p class="tips error">{{ tips }}</p>
@@ -20,7 +21,7 @@
                 <li class="item">
                     <div class="itemBox">
                         <p class="itemTitle">真实姓名</p>
-                        <input class="itemInputText long" type="text" v-model="name" placeholder="请输入与身份证一致的姓名" maxlength="10">
+                        <input class="itemInputText long" type="text" v-model.trim="name" placeholder="请输入与身份证一致的姓名" maxlength="10">
                     </div>
                     <div class="itemBox noMargin">
                         <p class="tips error">{{ tips }}</p>
@@ -34,11 +35,11 @@
                     </div>
                     <div class="itemBox">
                         <p class="itemTitle">开户银行</p>
-                        <input class="itemInputText small" type="text" v-model="accountName" placeholder="例：农业银行" maxlength="30">
+                        <input class="itemInputText small" type="text" v-model.trim="accountName" placeholder="例：农业银行" maxlength="30">
                     </div>
                     <div class="itemBox">
                         <p class="itemTitle">开户网点</p>
-                        <input class="itemInputText small" type="text" v-model="accountAddr" placeholder="例：雨花亭支行" maxlength="30">
+                        <input class="itemInputText small" type="text" v-model.trim="accountAddr" placeholder="例：雨花亭支行" maxlength="30">
                     </div>
                     <div class="itemBox noMargin">
                         <p class="tips error">{{ tips }}</p>
@@ -82,10 +83,13 @@ body{background-color:#dedede;}
         &.noMargin{margin:0;}
     }
     .itemTitle{font-size:16px;margin-bottom:16px;height:24px;}
-    .itemInputText{width:285px - @itemBoxMarginRight * 2;padding:15px;border:1px solid @publicBorderColor;
+    .itemInputText{width:285px - @itemBoxMarginRight * 2;height:16px;padding:15px;border:1px solid @publicBorderColor;
         &:focus{border-color:@publicBodyStyleColor;}
         &.long{width:420px - @itemBoxMarginRight * 2;}
         &.small{width:194px - @itemBoxMarginRight * 2;}
+    }
+    .getCoderBtn{width:130px;height:48px;display:block;color:#fff;position:absolute;right:0;bottom:0;line-height:48px;text-align:center;background-color:@publicBodyStyleColor;
+        &:hover{background-color:@publicBodyStyleColor + 10;}
     }
     .uploadBox{width:420px;height:220px;line-height:220px;border:1px solid @publicBorderColor;text-align:center;color:@publicBorderColor;}
     .todoBox{margin-top:120px;}
