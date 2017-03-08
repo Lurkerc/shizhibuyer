@@ -117,6 +117,15 @@
           accountAddr: '',
           tips: '提示文本'
         }
+      },
+      // page head config
+      head () {
+        return {
+          title: this.title,
+          meta: [
+            { hid: 'description', name: 'description', content: '这是商家入驻的资料提交页面' }
+          ]
+        }
       }
     }
 </script>
