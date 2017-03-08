@@ -1,5 +1,5 @@
 <template>
   <nav>
-    <div class="nav"></div>
+    <div class="nav">这是菜单</div>
   </nav>
 </template>
