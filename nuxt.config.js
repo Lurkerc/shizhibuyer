@@ -18,7 +18,10 @@ module.exports = {
   */
   css: [
     '~assets/css/pageFadeIn.css',
-    '~assets/css/resetStyle.css'
+    {
+      src: '~assets/less/components/resetStyle.less',
+      lang: 'less'
+    }
   ],
   /*
   ** Customize the progress-bar color
