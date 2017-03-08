@@ -17,7 +17,10 @@ module.exports = {
   ** Global CSS
   */
   css: [
-    '~assets/css/pageFadeIn.css',
+    {
+      src: '~assets/less/components/pageFadeIn.less',
+      lang: 'less'
+    },
     {
       src: '~assets/less/components/resetStyle.less',
       lang: 'less'
@@ -43,6 +46,11 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
+    },
+    filenames: {
+      css: 'app.min.css',
+      vendor: 'vendor.min.js',
+      app: 'app.min.js'
     }
   }
 }
