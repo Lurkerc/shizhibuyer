@@ -47,36 +47,17 @@
 .theOrangeRed{color:@publicOrangeRedColor;}
 .theOrange{color:@publicFontColorOrange;}
 .iconBackgroundImg{background:url(../img/icon/icon.png) no-repeat;}
-.contentCenter{width:@publicBodyWidth;min-width:@publicBodyWidth;margin:0 auto;}
-.theMinWidth100{width:100%;min-width:@publicBodyWidth;}
-.textOverflowEllipsis(@lineNums:1){height:@lineNums * 22px;text-overflow: ellipsis;overflow:hidden;display: -webkit-box;-webkit-line-clamp: @lineNums;-webkit-box-orient: vertical;}
-.imgVerticalAndHorizontalCenter{display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-    overflow: hidden;
-}
-.lookMore{font-size:16px;color:@publicBodyStyleColor;}
-.theMainPublicSty,.theMenu{margin-top:106px;}
-.header.active~.main{margin-top:@headerMainHeight;}
-.header.active~.theMenu{margin-top:@headerMainHeight;}
-.header.active~.theMenu~.main{margin-top:0;}
 
-.topBox{
-    text-align: center;
-    .theTitle{letter-spacing:1px;font-size:30px;margin-bottom:0;}
-    .theLine{width:@publicTheLineWidth;height:2px;background-color:@publicBodyStyleColor;display:inline-block;}
-    .theText{margin-top:10px;font-size:16px;}
+// 文字超出省略（默认1行）
+.textOverflowEllipsis(@lineNums:1){
+    text-overflow: ellipsis;
+    overflow:hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: @lineNums;
+    -webkit-box-orient: vertical;
 }
 
+// 圆角
 .border-radius(@radius:5px){
     -webkit-border-radius: @radius;
     -moz-border-radius: @radius;
@@ -112,9 +93,4 @@
     filter:grayscale(100%);
     filter:gray;
     filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
-}
-
-// 文字超出省略（默认1行）
-.textOverflowEllipsis(@lineNums:1){
-    text-overflow: ellipsis;overflow:hidden;display:-webkit-box;-webkit-line-clamp:@lineNums;-webkit-box-orient:vertical;
 }
