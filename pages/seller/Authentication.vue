@@ -1,6 +1,6 @@
 <template>
-    <section>
-        <div class="main">
+    <section class="main">
+        <div class="authenticationMain">
             <h2 class="title">{{ title }}</h2>
             <ul class="inputItem">
                 <li class="item">
@@ -70,55 +70,53 @@
 </template>
 
 <style lang="less">
-@import '~assets/less/_var.less';
-@itemBoxMarginRight:15px; // 输入项右边距
-body{background-color:#dedede;}
-.main{width:1200px - 80 - 120;margin:0 auto;margin-top:@headerMainHeight + 40px;margin-bottom:80px;background-color:#fff;padding:48px 80px 100px 120px;
-    .title{font-size:24px;padding-bottom:26px;border-bottom:1px solid @publicBorderColor;font-weight:300;}
-    .inputItem{padding-top:10px;}
-    .item{margin-top:20px;}
-    .tips{max-width:300px;height:18px;padding-top:54px;overflow:hidden;}
-    .error{color:red;}
-    .itemBox{float:left;margin-right:30px;position:relative;
-        &.noMargin{margin:0;}
-    }
-    .itemTitle{font-size:16px;margin-bottom:16px;height:24px;}
-    .itemInputText{width:285px - @itemBoxMarginRight * 2;height:16px;padding:15px;border:1px solid @publicBorderColor;
-        &:focus{border-color:@publicBodyStyleColor;}
-        &.long{width:420px - @itemBoxMarginRight * 2;}
-        &.small{width:194px - @itemBoxMarginRight * 2;}
-    }
-    .getCoderBtn{width:130px;height:48px;display:block;color:#fff;position:absolute;right:0;bottom:0;line-height:48px;text-align:center;background-color:@publicBodyStyleColor;
-        &:hover{background-color:@publicBodyStyleColor + 10;}
-    }
-    .uploadBox{width:420px;height:220px;line-height:220px;border:1px solid @publicBorderColor;text-align:center;color:@publicBorderColor;}
-    .todoBox{margin-top:120px;}
-    .agreementBox{margin-bottom:18px;text-align:center;margin-left:78px;}
-    .checkbox{line-height:1;}
-    .agreementInput{margin-left:6px;cursor:pointer;
-        a{color:@publicBodyStyleColor;}
-    }
-    .submitBtn{width:120px;height:38px;line-height:38px;display:block;margin:0 auto;background-color:@publicBodyStyleColor;color:#fff;text-align:center;
-        &:hover{background-color:@publicBodyStyleColor + 10;}
-    }
-}
+  @import '~assets/less/_var.less';
+  @itemBoxMarginRight:15px; // 输入项右边距
+  body{background-color:#dedede;}
+  .authenticationMain{width:1200px - 80 - 120;margin:0 auto;margin-top:@headerMainHeight + 40px;margin-bottom:80px;background-color:#fff;padding:48px 80px 100px 120px;
+      .title{font-size:24px;padding-bottom:26px;border-bottom:1px solid @publicBorderColor;font-weight:300;}
+      .inputItem{padding-top:10px;}
+      .item{margin-top:20px;}
+      .tips{max-width:300px;height:18px;padding-top:54px;overflow:hidden;}
+      .error{color:red;}
+      .itemBox{float:left;margin-right:30px;position:relative;
+          &.noMargin{margin:0;}
+      }
+      .itemTitle{font-size:16px;margin-bottom:16px;height:24px;}
+      .itemInputText{width:285px - @itemBoxMarginRight * 2;height:16px;padding:15px;border:1px solid @publicBorderColor;
+          &:focus{border-color:@publicBodyStyleColor;}
+          &.long{width:420px - @itemBoxMarginRight * 2;}
+          &.small{width:194px - @itemBoxMarginRight * 2;}
+      }
+      .getCoderBtn{width:130px;height:48px;display:block;color:#fff;position:absolute;right:0;bottom:0;line-height:48px;text-align:center;background-color:@publicBodyStyleColor;
+          &:hover{background-color:@publicBodyStyleColor + 10;}
+      }
+      .uploadBox{width:420px;height:220px;line-height:220px;border:1px solid @publicBorderColor;text-align:center;color:@publicBorderColor;}
+      .todoBox{margin-top:120px;}
+      .agreementBox{margin-bottom:18px;text-align:center;margin-left:78px;}
+      .checkbox{line-height:1;}
+      .agreementInput{margin-left:6px;cursor:pointer;
+          a{color:@publicBodyStyleColor;}
+      }
+      .submitBtn{width:120px;height:38px;line-height:38px;display:block;margin:0 auto;background-color:@publicBodyStyleColor;color:#fff;text-align:center;
+          &:hover{background-color:@publicBodyStyleColor + 10;}
+      }
+  }
 </style>
 
 <script>
-    import Vue from "vue";
-
     export default{
-        data () {
-            return {
-                    title:"商家入驻",
-                    phone:'',
-                    code:'',
-                    name:'',
-                    card:'',
-                    accountName:'',
-                    accountAddr:'',
-                    tips:'提示文本',
-            }
+      data () {
+        return {
+          title: '商家入驻',
+          phone: '',
+          code: '',
+          name: '',
+          card: '',
+          accountName: '',
+          accountAddr: '',
+          tips: '提示文本'
         }
+      }
     }
 </script>
