@@ -1,39 +1,37 @@
 <template>
-    <header>
-        <div id="header" class="header active">
-            <div class="headerMain">
-                <div class="headerBox">
-                    <div class="logoBox">
-                        <a href="/"><img src="~assets/img/logo.png" /></a>
-                    </div>
-                    <ul class="theNavMain">
-                        <li class="navItem">
-                            <a href="/">首页</a>
-                        </li>
-                            <li class="navItem">
-                                <a href="/video/">学堂</a>
-                            </li>
-                            <li class="navItem">
-                                <a href="/community/">发现</a>
-                            </li>
-                            <li class="navItem">
-                                <a href="/shop/">商城</a>
-                            </li>
-                            <li class="clearFloat"></li>
-                    </ul>
-                    <div class="searchMain">
-                        <input type="text" id="searchInput" value="" placeholder="请输入搜索内容" maxlength="10" />
-                        <a href="JavaScript:void(0);" class="searchBtn" id="searchBtn"></a>
-                    </div>
-                    <div class="loginMain" id="loginMain">
-                        <a href="javascript:void(0);" class="openLogin">登录</a>
-                        <a href="javascript:void(0);" class="openReg">注册</a>
-                    </div>
-                    <div class="clearFloat"></div>
-                </div>
-            </div>
-        </div>
-    </header>
+  <header id="header" class="header active">
+      <div class="headerMain">
+          <div class="headerBox">
+              <div class="logoBox">
+                  <a href="/"><img src="~assets/img/logo.png" /></a>
+              </div>
+              <ul class="theNavMain">
+                  <li class="navItem">
+                      <a href="/">首页</a>
+                  </li>
+                      <li class="navItem">
+                          <a href="/video/">学堂</a>
+                      </li>
+                      <li class="navItem">
+                          <a href="/community/">发现</a>
+                      </li>
+                      <li class="navItem">
+                          <a href="/shop/">商城</a>
+                      </li>
+                      <li class="clearFloat"></li>
+              </ul>
+              <div class="searchMain">
+                  <input type="text" id="searchInput" value="" placeholder="请输入搜索内容" maxlength="10" />
+                  <a href="JavaScript:void(0);" class="searchBtn" id="searchBtn"></a>
+              </div>
+              <div class="loginMain" id="loginMain">
+                  <a href="javascript:void(0);" class="openLogin">登录</a>
+                  <a href="javascript:void(0);" class="openReg">注册</a>
+              </div>
+              <div class="clearFloat"></div>
+          </div>
+      </div>
+  </header>
 </template>
 
 <style lang="less">

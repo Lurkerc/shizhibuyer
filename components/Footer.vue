@@ -1,6 +1,5 @@
 <template>
-  <footer>
-    <div class="footer">
+    <footer class="footer">
         <div class="footerMain">
             <ul class="theFooterNav">
                 <li class="theTop">关于拾指</li>
@@ -40,8 +39,7 @@
                 <li class="clearFloat"></li>
             </ul>
         </div>
-    </div>
-  </footer>
+    </footer>
 </template>
 
 <style lang="less">
