@@ -11,11 +11,10 @@
 
 <style lang="less">
   @import '~assets/less/_var.less';
-  @navWidth:120px;
   .navMain{float: left;
     .pageTitle{font-size:18px;font-weight:normal;padding-bottom: 50px;}
   }
-  .navBox{width: @navWidth;padding: 20px 0;background-color:#eaeaea;
+  .navBox{width: @consoleNavWidth;padding: 20px 0;background-color:@consoleBgColor;
     .navItem{padding:20px 30px;font-size: 14px;
       &.active{background-color:#fff;}
     }

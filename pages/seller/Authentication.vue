@@ -1,72 +1,72 @@
 <template>
-    <section class="main">
-        <div class="authenticationMain">
-            <h2 class="title">{{ title }}</h2>
-            <ul class="inputItem">
-                <li class="item">
-                    <div class="itemBox">
-                        <p class="itemTitle">手机号</p>
-                        <input class="itemInputText" type="text" v-model.trim="phone" placeholder="请输入手机号" maxlength="16">
-                    </div>
-                    <div class="itemBox">
-                        <p class="itemTitle">验证码</p>
-                        <input class="itemInputText" type="number" v-model.number="code" placeholder="六位数" maxlength="6">
-                        <a href="javascript:;" class="getCoderBtn">获取验证码</a>
-                    </div>
-                    <div class="itemBox noMargin">
-                        <p class="tips error">{{ tips }}</p>
-                    </div>
-                    <div class="clearFloat"></div>
-                </li>
-                <li class="item">
-                    <div class="itemBox">
-                        <p class="itemTitle">真实姓名</p>
-                        <input class="itemInputText long" type="text" v-model.trim="name" placeholder="请输入与身份证一致的姓名" maxlength="10">
-                    </div>
-                    <div class="itemBox noMargin">
-                        <p class="tips error">{{ tips }}</p>
-                    </div>
-                    <div class="clearFloat"></div>
-                </li>
-                <li class="item">
-                    <div class="itemBox">
-                        <p class="itemTitle">结算银行卡号</p>
-                        <input class="itemInputText long strong" type="text" v-model="card" placeholder="请输入与结算的银行卡卡号" maxlength="19">
-                    </div>
-                    <div class="itemBox">
-                        <p class="itemTitle">开户银行</p>
-                        <input class="itemInputText small" type="text" v-model.trim="accountName" placeholder="例：农业银行" maxlength="30">
-                    </div>
-                    <div class="itemBox">
-                        <p class="itemTitle">开户网点</p>
-                        <input class="itemInputText small" type="text" v-model.trim="accountAddr" placeholder="例：雨花亭支行" maxlength="30">
-                    </div>
-                    <div class="itemBox noMargin">
-                        <p class="tips error">{{ tips }}</p>
-                    </div>
-                    <div class="clearFloat"></div>
-                </li>
-                <li class="item">
-                    <div class="itemBox">
-                        <p class="itemTitle">上传身份证</p>
-                        <div class="uploadBox">点击上传身份证正面照</div>
-                    </div>
-                    <div class="itemBox">
-                        <p class="itemTitle"></p>
-                        <div class="uploadBox">点击上传身份证背面照</div>
-                    </div>
-                    <div class="clearFloat"></div>
-                </li>
-            </ul>
-            <div class="todoBox">
-                <div class="agreementBox">
-                    <input type="checkbox" class="checkbox" id="agreementInput"/>
-                    <label for="agreementInput" class="agreementInput">阅读并接受<a href="">《拾指商家入驻协议》</a></label>
-                </div>
-                <nuxt-link to="/seller/Authentication-result/" class="submitBtn">提交审核</nuxt-link>
-            </div>
+  <section class="main">
+    <div class="authenticationMain">
+      <h2 class="title">{{ title }}</h2>
+      <ul class="inputItem">
+        <li class="item">
+          <div class="itemBox">
+            <p class="itemTitle">手机号</p>
+            <input class="itemInputText" type="text" v-model.trim="phone" placeholder="请输入手机号" maxlength="16">
+          </div>
+          <div class="itemBox">
+            <p class="itemTitle">验证码</p>
+            <input class="itemInputText" type="number" v-model.number="code" placeholder="六位数" maxlength="6">
+            <a href="javascript:;" class="getCoderBtn">获取验证码</a>
+          </div>
+          <div class="itemBox noMargin">
+            <p class="tips error">{{ tips }}</p>
+          </div>
+          <div class="clearFloat"></div>
+        </li>
+        <li class="item">
+          <div class="itemBox">
+            <p class="itemTitle">真实姓名</p>
+            <input class="itemInputText long" type="text" v-model.trim="name" placeholder="请输入与身份证一致的姓名" maxlength="10">
+          </div>
+          <div class="itemBox noMargin">
+            <p class="tips error">{{ tips }}</p>
+          </div>
+          <div class="clearFloat"></div>
+        </li>
+        <li class="item">
+          <div class="itemBox">
+            <p class="itemTitle">结算银行卡号</p>
+            <input class="itemInputText long strong" type="text" v-model="card" placeholder="请输入与结算的银行卡卡号" maxlength="19">
+          </div>
+          <div class="itemBox">
+            <p class="itemTitle">开户银行</p>
+            <input class="itemInputText small" type="text" v-model.trim="accountName" placeholder="例：农业银行" maxlength="30">
+          </div>
+          <div class="itemBox">
+            <p class="itemTitle">开户网点</p>
+            <input class="itemInputText small" type="text" v-model.trim="accountAddr" placeholder="例：雨花亭支行" maxlength="30">
+          </div>
+          <div class="itemBox noMargin">
+            <p class="tips error">{{ tips }}</p>
+          </div>
+          <div class="clearFloat"></div>
+        </li>
+        <li class="item">
+          <div class="itemBox">
+            <p class="itemTitle">上传身份证</p>
+            <div class="uploadBox">点击上传身份证正面照</div>
+          </div>
+          <div class="itemBox">
+            <p class="itemTitle"></p>
+            <div class="uploadBox">点击上传身份证背面照</div>
+          </div>
+          <div class="clearFloat"></div>
+        </li>
+      </ul>
+      <div class="todoBox">
+        <div class="agreementBox">
+          <input type="checkbox" class="checkbox" id="agreementInput"/>
+          <label for="agreementInput" class="agreementInput">阅读并接受<a href="">《拾指商家入驻协议》</a></label>
         </div>
-    </section>
+        <nuxt-link to="/seller/Authentication-result/" class="submitBtn">提交审核</nuxt-link>
+      </div>
+    </div>
+  </section>
 </template>
 
 <style lang="less">
@@ -106,32 +106,32 @@
 </style>
 
 <script>
-    export default{
-      data () {
-        return {
-          title: '商家入驻',
-          phone: '',
-          code: '',
-          name: '',
-          card: '',
-          accountName: '',
-          accountAddr: '',
-          tips: '提示文本'
-        }
-      },
-      computed: {
-      },
-      methods: {
+  export default{
+    data () {
+      return {
+        title: '商家入驻',
+        phone: '',
+        code: '',
+        name: '',
+        card: '',
+        accountName: '',
+        accountAddr: '',
+        tips: '提示文本'
+      }
+    },
+    computed: {
+    },
+    methods: {
 
-      },
-      // page head config
-      head () {
-        return {
-          title: this.title,
-          meta: [
-            { hid: 'description', name: 'description', content: '这是商家入驻的资料提交页面' }
-          ]
-        }
+    },
+    // page head config
+    head () {
+      return {
+        title: this.title,
+        meta: [
+          { hid: 'description', name: 'description', content: '这是商家入驻的资料提交页面' }
+        ]
       }
     }
+  }
 </script>

@@ -1,36 +1,36 @@
 <template>
   <header id="header" class="header active">
-      <div class="headerMain">
-          <div class="headerBox">
-              <div class="logoBox">
-                  <a href="/"><img src="~assets/img/logo.png" /></a>
-              </div>
-              <ul class="theNavMain">
-                  <li class="navItem">
-                      <a href="/">首页</a>
-                  </li>
-                      <li class="navItem">
-                          <a href="/video/">学堂</a>
-                      </li>
-                      <li class="navItem">
-                          <a href="/community/">发现</a>
-                      </li>
-                      <li class="navItem">
-                          <a href="/shop/">商城</a>
-                      </li>
-                      <li class="clearFloat"></li>
-              </ul>
-              <div class="searchMain">
-                  <input type="text" id="searchInput" value="" placeholder="请输入搜索内容" maxlength="10" />
-                  <a href="JavaScript:void(0);" class="searchBtn" id="searchBtn"></a>
-              </div>
-              <div class="loginMain" id="loginMain">
-                  <a href="javascript:void(0);" class="openLogin">登录</a>
-                  <a href="javascript:void(0);" class="openReg">注册</a>
-              </div>
-              <div class="clearFloat"></div>
-          </div>
+    <div class="headerMain">
+      <div class="headerBox">
+        <div class="logoBox">
+            <a href="/"><img src="~assets/img/logo.png" /></a>
+        </div>
+        <ul class="theNavMain">
+          <li class="navItem">
+            <a href="/">首页</a>
+          </li>
+          <li class="navItem">
+            <a href="/video/">学堂</a>
+          </li>
+          <li class="navItem">
+            <a href="/community/">发现</a>
+          </li>
+          <li class="navItem">
+            <a href="/shop/">商城</a>
+          </li>
+          <li class="clearFloat"></li>
+        </ul>
+        <div class="searchMain">
+          <input type="text" id="searchInput" value="" placeholder="请输入搜索内容" maxlength="10" />
+          <a href="JavaScript:void(0);" class="searchBtn" id="searchBtn"></a>
+        </div>
+        <div class="loginMain" id="loginMain">
+          <a href="javascript:void(0);" class="openLogin">登录</a>
+          <a href="javascript:void(0);" class="openReg">注册</a>
+        </div>
+        <div class="clearFloat"></div>
       </div>
+    </div>
   </header>
 </template>
 
@@ -40,28 +40,28 @@
 .header{width:100%;min-width:@publicBodyWidth;position:fixed;top:0;z-index:99;background-color:#fff;}
 .headerTop{width:100%;height:@headerTopBarHeight;background-color:@headerTopBarBackgroundColor;overflow:hidden;}
 .hederTopMain{width:@publicBodyWidth;height:@headerTopBarHeight;margin:0 auto;line-height:@headerTopBarHeight;
-    .leftText{.floatLeft;}
-    .rightTips{.floatRight;padding-right:(@headerTopLoginWidth + 40);}
+  .leftText{.floatLeft;}
+  .rightTips{.floatRight;padding-right:(@headerTopLoginWidth + 40);}
 }
 .headerMain{width:100%;height:@headerMainHeight;border-bottom:2px solid @publicBorderColor;
     /* 头部内容 */
     .headerBox{width:@publicBodyWidth;margin:0 auto;position:relative;
         /* logo */
         .logoBox{
-            .floatLeft;
-            img{height:@headerLogoHeight;margin-top:(@headerMainHeight - @headerLogoHeight)/2;}
+          .floatLeft;
+          img{height:@headerLogoHeight;margin-top:(@headerMainHeight - @headerLogoHeight)/2;}
         }
         /* 导航条 */
         .theNavMain{height:@headerMainHeight;line-height:@headerMainHeight - 2;padding:@headerMainMarginLeftForLogo;margin-bottom:0;
-            .floatLeft;
-            li {.floatLeft;
-                a {text-decoration:none;padding:@headerMainNavAPadding;margin:@headerMainNavAMargin;font-size:14px;color:@publicFontColor;display:inline-block;}
-            }
-            li.active{
-                a{font-size:16px;color:@publicBodyStyleColor;font-weight:600;border-bottom:2px solid @publicBodyStyleColor;}
-            }
-            .navItem:hover{background-color:@headerHoverStateColor;height:@headerMainHeight - 2;}
-            .navItem.active:hover{height:@headerMainHeight;background-color:#fff;border-bottom:2px solid @publicBorderColor;}
+          .floatLeft;
+          li {.floatLeft;
+            a {text-decoration:none;padding:@headerMainNavAPadding;margin:@headerMainNavAMargin;font-size:14px;color:@publicFontColor;display:inline-block;}
+          }
+          li.active{
+            a{font-size:16px;color:@publicBodyStyleColor;font-weight:600;border-bottom:2px solid @publicBodyStyleColor;}
+          }
+          .navItem:hover{background-color:@headerHoverStateColor;height:@headerMainHeight - 2;}
+          .navItem.active:hover{height:@headerMainHeight;background-color:#fff;border-bottom:2px solid @publicBorderColor;}
         }
         /* 搜索框 */
         .searchMain{width:@headerSearchWidth;height:@headerSearchHeight;
@@ -93,14 +93,14 @@
                 .userImg{margin:0;padding:0;border-radius:16px;}
                 .userInfo{margin:0;margin-top:4px;}
                 .theUserNav{width:@headerTopLoginWidth;margin:0;margin-top:10px;display:none;border:1px solid @publicBorderColor;background-color:#fff;position:absolute;right:0;top:40px;
-                    &:before{content:'';position:absolute;top:-20px;right:5px;border-width:10px;border-style: dashed dashed solid dashed;border-color: transparent transparent @publicBorderColor transparent;line-height: 0;font-size: 0;;}
-                    &:after{content:'';position:absolute;top:-19px;right:5px;border-width:10px;border-style: dashed dashed solid dashed;border-color: transparent transparent #FFF transparent;line-height: 0;font-size: 0;;}
-                    .theUserNavList{line-height:38px;
-                        a{color:@publicFontColor;margin-left:20px;
-                            span{color:@publicBodyStyleColor;}
-                            &:hover{color:@publicBodyStyleColor;}
-                        }
+                  &:before{content:'';position:absolute;top:-20px;right:5px;border-width:10px;border-style: dashed dashed solid dashed;border-color: transparent transparent @publicBorderColor transparent;line-height: 0;font-size: 0;;}
+                  &:after{content:'';position:absolute;top:-19px;right:5px;border-width:10px;border-style: dashed dashed solid dashed;border-color: transparent transparent #FFF transparent;line-height: 0;font-size: 0;;}
+                  .theUserNavList{line-height:38px;
+                    a{color:@publicFontColor;margin-left:20px;
+                      span{color:@publicBodyStyleColor;}
+                      &:hover{color:@publicBodyStyleColor;}
                     }
+                  }
                 }
                 &:hover{
                     & .theUserNav{display:block;}

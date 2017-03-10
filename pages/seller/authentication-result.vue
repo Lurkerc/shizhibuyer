@@ -1,22 +1,21 @@
 <template>
-    <section class="main">
-        <div class="authenticationTipMain">
-            <h2 class="title">{{ title }}</h2>
-            <p class="tipsBox">
-              <span class="tipsStr" v-bind:class="{'load': adopt === -1 }">{{ getTipsStr }}</span>
-            </p>
-            <div class="todoBox">
-                <nuxt-link v-if="adopt === 0" to="/seller/Authentication/" class="submitBtn">重新填写</nuxt-link>
-                <nuxt-link v-if="adopt === 1" to="/seller/console/" class="submitBtn">进入控制台</nuxt-link>
-            </div>
-        </div>
-    </section>
+  <section class="main">
+    <div class="authenticationTipMain">
+      <h2 class="title">{{ title }}</h2>
+      <p class="tipsBox">
+        <span class="tipsStr" v-bind:class="{'load': adopt === -1 }">{{ getTipsStr }}</span>
+      </p>
+      <div class="todoBox">
+        <nuxt-link v-if="adopt === 0" to="/seller/Authentication/" class="submitBtn">重新填写</nuxt-link>
+        <nuxt-link v-if="adopt === 1" to="/seller/console/" class="submitBtn">进入控制台</nuxt-link>
+      </div>
+    </div>
+  </section>
 </template>
 
 <style lang="less">
   @import '~assets/less/_var.less';
   @itemBoxMarginRight:15px; // 输入项右边距
-  body{background-color:#dedede;}
   .authenticationTipMain{width:1200px - 80 - 120;margin:0 auto;margin-top:@headerMainHeight + 40px;margin-bottom:80px;background-color:#fff;padding:48px 80px 100px 120px;
     .title{font-size:24px;padding-bottom:26px;border-bottom:1px solid @publicBorderColor;font-weight:300;}
     .tipsBox{text-align:center;padding:120px 0;}
