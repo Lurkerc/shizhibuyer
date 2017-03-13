@@ -69,7 +69,7 @@
             margin-right:(@headerTopLoginWidth + 40);
             margin-top:(@headerMainHeight - 40)/2;
             position:relative;
-            #searchInput {width:@headerSearchWidth;height:@headerSearchHeight;line-height:@headerSearchHeight;border:1px solid @publicBorderColor;text-indent:1em;font-family: "微软雅黑";}
+            #searchInput {width:@headerSearchWidth;height:@headerSearchHeight;line-height:@headerSearchHeight;border:1px solid @publicBorderColor;text-indent:1em;}
             .searchBtn{
                 .iconBackgroundImg;
                 width:@headerSearchHeight;height:@headerSearchHeight;background-position:-130px -4px;position:absolute;top:0;right:5px;display:block;
